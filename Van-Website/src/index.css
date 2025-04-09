@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1c1c1c;
+  color: #111;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.vanlife-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.vanlife-navbar {
+  background-color: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vanlife-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.vanlife-links {
+  display: flex;
+  gap: 20px;
+}
+
+.vanlife-links a {
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.vanlife-links a:hover {
+  color: orange;
+}
+
+.vanlife-main {
+  flex: 1;
+
+  background-color: #fff;
+}
+
+.vanlife-title {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  padding: auto;
+  text-align: center;
+}
+
+.vanlife-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color:whitesmoke;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.vanlife-button,
+.about-cta-button {
+  background-color: orange;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.vanlife-button:hover,
+.about-cta-button:hover {
+  background-color: darkorange;
+}
+
+.vanlife-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+  background-color: #f8f8f8;
+}
+
+.about-hero {
+  height: 220px;
+  background-image: url('./assets/about-hero.png');
+  background-size: cover;
+  display: flex;
+  padding: 20px;
+  border-radius: 12px;
+  min-height: 53vh;
+  margin-bottom: 24px;
+}
+
+.about-cta-box {
+  background-color: #fff4e6;
+  padding: 24px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.about-cta-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vanlife-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .vanlife-main {
+    padding: 20px;
+  }
+}
+.vanlife-home{
+  min-height: 73vh;
+  margin: 0;
+  padding: 0;
+  background-image: url('./assets/image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 24px;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+

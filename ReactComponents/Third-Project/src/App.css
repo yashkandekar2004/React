@@ -1,0 +1,84 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e1e1e;
+}
+
+.content {
+  background-color: #282c34;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+  background-image: url("https://react.dev/images/home/conf2021/cover.svg");
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 50%;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position-y:top;
+  background-position-x: bottom;  
+    
+}
+.text {
+  border: 1px solid #61dafb;
+  padding: 20px;
+  border: none;
+  background-color: #282c34;
+  margin-bottom: 80px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+
+}
+
+h1 {
+  color: #61dafb;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  height: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+li::before {
+  content: "•";
+  color: #61dafb;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
