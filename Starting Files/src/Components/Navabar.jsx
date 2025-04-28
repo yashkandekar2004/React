@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 function Navabar() {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div className="navbar">
@@ -19,7 +19,13 @@ function Navabar() {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
-      <button onClick={()=>{navigate('/contact')}}>Get Started</button>
+      <button
+        onClick={() => {
+          navigate("/contact");
+        }}
+      >
+        Get Started
+      </button>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ToDoList from "./toDoList";
+import ToDoList from "./ToDoList";
 function App() {
   const [inputText, setInputText] = useState("");
   const [toDos, setToDos] = useState([]);
@@ -14,7 +14,7 @@ function App() {
   // setToDos((prevValue)=>prevValue.filter((todo)=>todo!==removeText));
   //   setRemoveText("");
   // }
-  function handleChange() {
+  function handleChange(event) {
     let value = event.target.value;
     setInputText(value);
   }
